@@ -1,6 +1,7 @@
 package org.phoenixframework.channels;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
 
@@ -17,7 +18,7 @@ public class Envelope {
     @JsonProperty
     private String ref;
     
-    @JsonIgnoreProperties(ignoreUnknown = true
+    @JsonIgnoreProperties(ignoreUnknown = true)
 
     @SuppressWarnings("unused")
     public Envelope() {
