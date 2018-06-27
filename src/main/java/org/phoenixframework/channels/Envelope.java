@@ -16,6 +16,8 @@ public class Envelope {
 
     @JsonProperty
     private String ref;
+    
+    @JsonIgnoreProperties(ignoreUnknown = true
 
     @SuppressWarnings("unused")
     public Envelope() {
