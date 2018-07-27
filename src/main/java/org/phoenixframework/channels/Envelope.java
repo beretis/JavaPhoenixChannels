@@ -8,7 +8,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 public class Envelope {
     @JsonIgnoreProperties(ignoreUnknown = true)
 
-
     @JsonProperty(value = "topic")
     private String topic;
 

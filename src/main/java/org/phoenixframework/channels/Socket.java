@@ -1,5 +1,6 @@
 package org.phoenixframework.channels;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
@@ -137,6 +138,7 @@ public class Socket {
     private final Set<IMessageCallback> messageCallbacks = Collections
             .newSetFromMap(new HashMap<IMessageCallback, Boolean>());
 
+//    private final ObjectMapper objectMapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     private boolean reconnectOnFailure = true;

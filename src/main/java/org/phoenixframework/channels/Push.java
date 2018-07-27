@@ -11,6 +11,8 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import sun.rmi.runtime.Log;
+
 public class Push {
 
     private class TimeoutHook {
